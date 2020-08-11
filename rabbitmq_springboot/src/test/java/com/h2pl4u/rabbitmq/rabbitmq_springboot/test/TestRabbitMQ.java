@@ -19,9 +19,14 @@ public class TestRabbitMQ {
     @Autowired
     private RabbitTemplate rabbitTemplate;
 
+    @Test
+    public void testWork() {
+        rabbitTemplate.convertAndSend("work", "work 模型");
+    }
+
     //hello world
     @Test
-    public void test() {
+    public void testHello() {
         rabbitTemplate.convertAndSend("hello", "hello world");
     }
 }
