@@ -9,10 +9,12 @@
         <module name="exchange" />
         <module name="singlequeue" />
         <module name="workqueue" />
+        <module name="routing" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="exchange" target="1.8" />
+      <module name="routing" target="1.8" />
       <module name="singlequeue" target="1.8" />
       <module name="workqueue" target="1.8" />
     </bytecodeTargetLevel>

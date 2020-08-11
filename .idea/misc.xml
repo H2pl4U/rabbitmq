@@ -6,6 +6,7 @@
         <option value="$PROJECT_DIR$/singlequeue/pom.xml" />
         <option value="$PROJECT_DIR$/workqueue/pom.xml" />
         <option value="$PROJECT_DIR$/exchange/pom.xml" />
+        <option value="$PROJECT_DIR$/routing/pom.xml" />
       </list>
     </option>
   </component>

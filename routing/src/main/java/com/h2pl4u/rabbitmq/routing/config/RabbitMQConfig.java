@@ -1,4 +1,4 @@
-package com.h2pl4u.rabbitmq.exchange.config;
+package com.h2pl4u.rabbitmq.routing.config;
 
 import com.rabbitmq.client.Channel;
 import com.rabbitmq.client.Connection;
