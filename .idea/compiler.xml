@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="exchange" />
+        <module name="rabbitmq_springboot" />
         <module name="singlequeue" />
         <module name="workqueue" />
         <module name="routing" />
@@ -14,6 +15,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="exchange" target="1.8" />
+      <module name="rabbitmq_springboot" target="1.8" />
       <module name="routing" target="1.8" />
       <module name="singlequeue" target="1.8" />
       <module name="workqueue" target="1.8" />
