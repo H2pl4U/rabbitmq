@@ -24,7 +24,7 @@ public class Consumer2 {
                 }
                 System.out.println("消费者-2:" + new String(body));
                 //参数1：确认队列中的具体消息 参数2：是否开启多个消息同时确认
-                channel.basicAck(envelope.getDeliveryTag(),false);
+                channel.basicAck(envelope.getDeliveryTag(), false);
             }
         });
 

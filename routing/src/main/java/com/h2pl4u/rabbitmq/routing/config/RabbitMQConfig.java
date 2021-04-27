@@ -21,6 +21,7 @@ public class RabbitMQConfig {
 
     /**
      * 获取connect连接
+     *
      * @return
      */
     public static Connection getConnection() {
@@ -34,6 +35,7 @@ public class RabbitMQConfig {
 
     /**
      * 关闭连接
+     *
      * @param channel
      * @param connection
      */

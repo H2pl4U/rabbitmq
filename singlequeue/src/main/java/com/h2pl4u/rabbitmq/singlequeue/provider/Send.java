@@ -36,13 +36,13 @@ public class Send {
         //参数3：exclusive 是否独占队列
         //参数4：autoDelete 是否再消费完成后自动删除队列
         //参数5：额外附加参数
-        channel.queueDeclare("hello",false,false,false,null);
+        channel.queueDeclare("hello", false, false, false, null);
         //发布消息
         //参数1：交换机名称
         //参数2：队列名称
         //参数3：参数消息额外设置  MessageProperties.PERSISTENT_TEXT_PLAIN:持久化队列消息
         //参数4：消息具体内容的二进制编码
-        channel.basicPublish("","hello", MessageProperties.PERSISTENT_TEXT_PLAIN,"helloworld1".getBytes());
+        channel.basicPublish("", "hello", MessageProperties.PERSISTENT_TEXT_PLAIN, "helloworld1".getBytes());
 
         channel.close();
         connection.close();

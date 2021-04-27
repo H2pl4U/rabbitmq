@@ -22,7 +22,7 @@ public class TestRabbitMQ {
     //route 路由模式 topic订阅模式
     @Test
     public void testRouteTopic() {
-        rabbitTemplate.convertAndSend("topics","user.save.findAll","user.save的路由消息");
+        rabbitTemplate.convertAndSend("topics", "user.save.findAll", "user.save的路由消息");
     }
 
     //route 路由模式 direct直连
@@ -34,7 +34,7 @@ public class TestRabbitMQ {
     //fanout 广播
     @Test
     public void testFanout() {
-        rabbitTemplate.convertAndSend("logs", "","Fanout模型发送的消息");
+        rabbitTemplate.convertAndSend("logs", "", "Fanout模型发送的消息");
     }
 
     //work

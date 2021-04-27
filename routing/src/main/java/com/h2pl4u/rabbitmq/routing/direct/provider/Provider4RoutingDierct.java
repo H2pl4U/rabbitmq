@@ -24,6 +24,6 @@ public class Provider4RoutingDierct {
         //发布消息 参数1：交换机名称 参数2：路由key
         channel.basicPublish("logs_direct", routingkey, null, ("Direct模型发布基于RoutingKey:[" + routingkey + "]发送的消息").getBytes());
         //关闭资源
-        RabbitMQConfig.closeConnectionAndChannel(channel,connection);
+        RabbitMQConfig.closeConnectionAndChannel(channel, connection);
     }
 }

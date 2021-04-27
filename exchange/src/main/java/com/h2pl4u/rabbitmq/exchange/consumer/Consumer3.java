@@ -17,12 +17,12 @@ public class Consumer3 {
         //临时队列
         String queue = channel.queueDeclare().getQueue();
         //绑定交换机和队列
-        channel.queueBind(queue, "logs","");
+        channel.queueBind(queue, "logs", "");
         //消费消息
-        channel.basicConsume(queue,true,new DefaultConsumer(channel) {
+        channel.basicConsume(queue, true, new DefaultConsumer(channel) {
             @Override
             public void handleDelivery(String consumerTag, Envelope envelope, AMQP.BasicProperties properties, byte[] body) throws IOException {
-                System.out.println("消费者3："+ new String(body));
+                System.out.println("消费者3：" + new String(body));
             }
         });
     }

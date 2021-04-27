@@ -5,7 +5,6 @@ import com.rabbitmq.client.Connection;
 import com.rabbitmq.client.ConnectionFactory;
 
 /**
- *
  * Created by Liuwei on 2020/8/10 15:06
  */
 public class RabbitMQUtils {
@@ -22,6 +21,7 @@ public class RabbitMQUtils {
 
     /**
      * 获取connect连接
+     *
      * @return
      */
     public static Connection getConnection() {
@@ -35,6 +35,7 @@ public class RabbitMQUtils {
 
     /**
      * 关闭连接
+     *
      * @param channel
      * @param connection
      */

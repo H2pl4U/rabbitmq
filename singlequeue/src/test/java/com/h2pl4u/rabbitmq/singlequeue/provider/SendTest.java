@@ -18,8 +18,8 @@ public class SendTest {
     public void sendTest() throws IOException, TimeoutException {
         Connection connection = RabbitMQUtils.getConnection();
         Channel channel = connection.createChannel();
-        channel.queueDeclare("rabbitqueue",true,false,true,null);
-        channel.basicPublish("","rabbitqueue",null,"helloworldzzz".getBytes());
+        channel.queueDeclare("rabbitqueue", true, false, true, null);
+        channel.basicPublish("", "rabbitqueue", null, "helloworldzzz".getBytes());
 
         channel.close();
         connection.close();

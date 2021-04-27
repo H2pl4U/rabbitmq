@@ -15,7 +15,7 @@ public class TopicConsumer {
     @RabbitListener(bindings = {
             @QueueBinding(value = @Queue,
                     exchange = @Exchange(value = "topics", type = "topic"),
-                    key = {"user.save","user.*"})
+                    key = {"user.save", "user.*"})
     })
     public void receiver1(String massage) {
         System.out.println("消费者1：" + massage);
